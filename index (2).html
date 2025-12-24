@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아시아 국가 정보</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #343a40 !important;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .country-card {
+            transition: transform 0.3s ease;
+        }
+
+        .country-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .country-flag {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .country-details p {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* 알록달록한 색상 테마 */
+        .bg-theme-1 { background-color: #ffc107 !important; color: #212529; } /* 노란색 */
+        .bg-theme-2 { background-color: #17a2b8 !important; color: white; } /* 청록색 */
+        .bg-theme-3 { background-color: #28a745 !important; color: white; } /* 초록색 */
+        .bg-theme-4 { background-color: #dc3545 !important; color: white; } /* 빨간색 */
+        .bg-theme-5 { background-color: #6f42c1 !important; color: white; } /* 보라색 */
+    </style>
+    <!-- Noto Sans KR 폰트 추가 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-globe-asia"></i> 아시아 국가 정보
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">홈 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">정보</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">문의</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- 대한민국 -->
+            <div class="col-md-4">
+                <div class="card country-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/255px-Flag_of_South_Korea.svg.png" class="country-flag" alt="대한민국 국기">
+                    <div class="card-body">
+                        <h5 class="card-title">대한민국 <span class="badge badge-primary">South Korea</span></h5>
+                        <div class="country-details">
+                            <p><i class="fas fa-map-marker-alt"></i> 수도: 서울</p>
+                            <p><i class="fas fa-users"></i> 인구: 약 5,100만 명</p>
+                            <p><i class="fas fa-comments"></i> 언어: 한국어</p>
+                            <p><i class="fas fa-won-sign"></i> 통화: 원 (KRW)</p>
+                            <p><i class="fas fa-info-circle"></i> 간단한 설명: 역동적인 문화와 첨단 기술이 공존하는 나라입니다.</p>
+                        </div>
+                        <a href="#" class="btn btn-primary">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 일본 -->
+            <div class="col-md-4">
+                <div class="card country-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/255px-Flag_of_Japan.svg.png" class="country-flag" alt="일본 국기">
+                    <div class="card-body">
+                        <h5 class="card-title">일본 <span class="badge badge-danger">Japan</span></h5>
+                        <div class="country-details">
+                            <p><i class="fas fa-map-marker-alt"></i> 수도: 도쿄</p>
+                            <p><i class="fas fa-users"></i> 인구: 약 1억 2,600만 명</p>
+                            <p><i class="fas fa-comments"></i> 언어: 일본어</p>
+                            <p><i class="fas fa-yen-sign"></i> 통화: 엔 (JPY)</p>
+                            <p><i class="fas fa-info-circle"></i> 간단한 설명: 전통과 현대가 조화를 이루는 아름다운 나라입니다.</p>
+                        </div>
+                        <a href="#" class="btn btn-danger">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 중국 -->
+            <div class="col-md-4">
+                <div class="card country-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/255px-Flag_of_the_People%27s_Republic_of_China.svg.png" class="country-flag" alt="중국 국기">
+                    <div class="card-body">
+                        <h5 class="card-title">중국 <span class="badge badge-success">China</span></h5>
+                        <div class="country-details">
+                            <p><i class="fas fa-map-marker-alt"></i> 수도: 베이징</p>
+                            <p><i class="fas fa-users"></i> 인구: 약 14억 명</p>
+                            <p><i class="fas fa-comments"></i> 언어: 표준중국어</p>
+                            <p><i class="fas fa-yen-sign"></i> 통화: 위안 (CNY)</p>
+                            <p><i class="fas fa-info-circle"></i> 간단한 설명: 세계에서 가장 인구가 많은 나라로, 다양한 문화와 역사를 자랑합니다.</p>
+                        </div>
+                        <a href="#" class="btn btn-success">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 다른 국가 정보 추가 -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 아시아 국가 정보. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS, jQuery, Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
